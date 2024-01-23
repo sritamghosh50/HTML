@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-1</title>
+    <style>
+        .head
+{
+    display: flex;
+    justify-content: space-between;
+    color:azure;
+    margin-right: 50px;
+   
+}
+.arrange
+{
+    list-style-type: none;
+    display: inline;
+    margin: 20px 20px;
+    margin-right: 60px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #9893d8;
+}
+
+h1
+{
+    margin-left: 200px;
+}
+
+body
+{
+    background-color: var(--secondary);
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+    --primary: #22d0ff;
+    --secondary: #0a0b5b;
+  }
+
+  .arrange a
+  {
+    text-decoration: none;
+    color: #9893d8;
+    transition:25 all ease;
+  }
+
+  .arrange a:hover
+  {
+    transform: scale(0.5);
+    color: red;
+  }
+
+  #welcome
+  {
+    display:flex;
+    color: azure;
+    padding: 110px 20px 10px 200px;
+  }
+
+  .welcome-img
+  {
+    grid-column: 6/9;
+  }
+
+  .welcome-text
+  {
+    
+    grid-column: 1/6;
+    padding: 130px 0px 0px 0px;
+    margin: 15px;
+    
+  }
+
+  .welcome-img img {
+    width: 100%;
+}
+
+    .welcome-text a {
+        margin: 20px 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 10px;
+      }
+
+      h2
+      {
+        font-size: 35px;
+      }
+
+      .para1
+      {
+        font-size: 20px;
+        color: #9893d8;
+        font-style:oblique;
+      }
+
+      .button
+      {
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid #22d0ff ;
+        color: #22d0ff;
+        font-size: 22px;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+
+      .button:hover
+      {
+        background-color: #22d0ff;
+        transform: scale(0.5);
+        color: black;
+      }
+
+     
+      h3
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 0px 0px 0px;
+        font-size: 35px;
+        color: aliceblue;
+      }
+
+      .planet {
+        background: url(https://github.com/iamshaunjp/responsive-css-grid-build/blob/lesson-2/assets/square_bg.png?raw=true)
+          bottom/cover no-repeat;
+        padding: 30px 20px;
+      }
+
+      .planet a {
+        grid-column: 1/9;
+        margin: 20px 0;
+        display: flex;
+      }
+      .planet a * {
+        margin: 0 20px;
+        max-width: 10%;
+        align-self: center;
+        
+      }
+      .planet h4 {
+        color: #9994f7;
+      }
+
+     
+      .planet project
+      {
+        min-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      .image3
+      {
+        padding: 0px 0px 0px 1000px;
+        min-width: 200px;;
+      }
+
+      
+      .image2
+      {
+        padding: 0px 0px 0px 600px;
+        min-width: 200px;;
+      }
+
+      
+      .image1
+      {
+        padding: 0px 0px 0px 100px;
+        min-width: 250px;;
+      }
+
+      #skills {
+        padding: 10px 0px;
+        background-color: #07083e;
+      }
+      #skills h3 {
+        text-align: center;
+      }
+      #skills ul {
+        margin: 40px 0;
+        list-style-type: none;
+      }
+      #skills li {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        grid-column: span 4;
+        text-align: center;
+        
+      }
+      #skills img {
+        height: 80px;
+        margin: 10px auto;
+      }
+
+      h4
+      {
+        color: aliceblue;
+        font-size: 22px;
+      }
+
+      #contact {
+        padding: 30px 20px;
+        background: #080936;
+      }
+
+      .leading
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #9893d8;
+        font-size: 25px;
+      }
+
+      .form
+      {
+        padding: 0 0 0 0;
+        display: block;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #contact form {
+        width: 80%;
+        max-width: 400px;
+        margin: 20px auto;
+        text-align: center;
+      }
+
+      #contact input,
+#contact textarea {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+#contact .button {
+  margin-top: 10px;
+}
+
+footer {
+    padding: 30px 20px;
+    background-color: #14153d;
+    background-image: url(https://i.ibb.co/Fsc8R8H/satellite.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .grid
+  {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .social
+  {
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .copyright
+  {
+    color: antiquewhite;
+    font-size: 20px;
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+        <h1>Cosmo Junkie</h1>
+        <ul class="arrange">
+            <li class="arrange item"><a href="">Portfolio</a></li>
+            <li class="arrange item"> <a href="">Skills</a></li>
+            <li class="arrange item"> <a href="">Contact</a></li>
+        </ul>
+    </div>
+    </header>
+    <section class="grid" id="welcome">
+        <div class="welcome-text">
+            <h2>Space Enthusiast<br />& JavaScript Developer</h2>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Alias, repellat?</p>
+            <a href="" class="button">View my work</a>
+        </div>
+        <div class="welcome-img">
+            <img src="https://i.ibb.co/kxPxsrv/trou-noir.png" alt="pic of planet">
+        </div>
+    </section>
+    <section class="planet">
+        <h3>Some of my Projects</h3>
+        <div class="planet project">
+            <a href="#">
+                <img src="https://i.ibb.co/tZBs4kv/capsule-spatiale.png" alt="space race image" class="image1">
+                <h4>Space Race Game</h4>
+              </a>
+              <a href="#">
+                <img src="https://i.ibb.co/sgWBR6M/saturne.png" alt="planet boy image" class="image2">
+                <h4>Planet Boy API</h4>
+              </a>
+              <a href="#">
+                <img src="https://i.ibb.co/Q80kSPQ/astronaute.png" alt="captain cosmo image" class="image3">
+                <h4>Captain Cosmo Blog</h4>
+              </a>
+        </div>
+    </section>
+    <section id="skills">
+        <h3>Things I Can Do</h3>
+            <ul class="grid">
+                <li>
+                  <img src="https://i.ibb.co/hXvFQTy/meteor2647400.png" alt="comet" class="grid1">
+                  <h4>JavaScript</h4>
+                </li>
+                <li>
+                  <img src="https://i.ibb.co/zJ69DMc/comet2534248.png" alt="comet" class="grid2">
+                  <h4>React</h4>
+                </li>
+                <li>
+                  <img src="https://i.ibb.co/0Y20t0c/comet2909923.png" alt="comet" class="grid3">
+                  <h4>Firebase</h4>
+                </li>
+                <li>
+                  <img src="https://i.ibb.co/c1nBk03/meteor.png" alt="comet" class="grid4">
+                  <h4>Gatsby</h4>
+                </li>
+              </ul>
+</section>
+<section id="contact">
+    <h3>Get In Touch</h3>
+    <p class="leading">Lorem ipsum dolor sit amet consectetur.</p>
+    <FORM class="form">
+    <input type="text " name="Name" placeholder="NAME...."><br>
+    <input type="Mail" name="Email" placeholder="EMAIL...."><br>
+    <textarea placeholder="YOUR MESSAGE....."></textarea>
+    <button class="button">Send Flare</button>
+</FORM>
+</section>
+<footer>
+    <div class="grid">
+      <p class="copyright">Copyright 2021 Cosmo Junkie</p>
+      <ul class="social">
+        <li><a href="#"><img src="https://raw.githubusercontent.com/iamshaunjp/responsive-css-grid-build/847f0a24fecf4aba7cd205a09b7a52b7924766cf/assets/icon_fb.svg" alt="facebook"></a></li>
+        <li><a href="#"><img src="https://raw.githubusercontent.com/iamshaunjp/responsive-css-grid-build/847f0a24fecf4aba7cd205a09b7a52b7924766cf/assets/icon_tw.svg" alt="twitter"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
